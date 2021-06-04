@@ -95,21 +95,12 @@
 
         </LinearLayout>
 
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/income_recyclerview"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
-
-
         <TextView
             android:id="@+id/add_income"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginLeft="60dp"
-            android:layout_marginTop="30dp"
             android:layout_marginRight="60dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/blue_fill__rounded_color"
@@ -121,11 +112,12 @@
 
 
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/expense_recyclerview"
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/income_recyclerview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
 
 
         <TextView
@@ -142,6 +134,15 @@
             android:paddingBottom="15dp"
             android:text="Add Expense!!"
             android:textColor="@color/white" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/expense_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+
 
 
     </LinearLayout>
